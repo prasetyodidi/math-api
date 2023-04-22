@@ -2,7 +2,7 @@
 
 ## Sebuah objek MathBasic
 
-Harus memiliki fungsi add, subtract, multiply, dan divide
+~~Harus memiliki fungsi add, subtract, multiply, dan divide~~
 
 ## Sebuah fungsi add:
 
