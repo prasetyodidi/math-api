@@ -18,7 +18,7 @@ Harus memiliki fungsi add, subtract, multiply, dan divide
 
 - ~~Harus mengembalikan eror ketika diberikan parameter selain number~~
 
-- Harus mengembalikan nilai a - b ketika diberikan dua parameter number
+- ~~Harus mengembalikan nilai a - b ketika diberikan dua parameter number~~
 
 ## Sebuah fungsi multiply:
 
