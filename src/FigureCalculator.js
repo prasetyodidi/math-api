@@ -13,6 +13,8 @@ class FigureCalculator {
         if (typeof length !== 'number' || typeof width !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
+
+        return this._mathBasic.multiply(2, this._mathBasic.add(length, width));
     }
     calculateRectangleArea() { }
     calculateTrianglePerimeter() { }

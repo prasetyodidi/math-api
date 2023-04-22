@@ -1,4 +1,5 @@
 const FigureCalculator = require('./FigureCalculator');
+const MathBasic = require("./MathBasic");
 
 describe('A FigureCalculator', () => {
     it('should contain CalculatorRectanglePerimeter, calculatorRectangleArea, calculatorTrianglePerimeter, and calculatorTriangleArea functions', () => {
@@ -29,6 +30,20 @@ describe('A FigureCalculator', () => {
             expect(() => figureCalculator.calculateRectanglePerimeter(true, {})).toThrowError();
             expect(() => figureCalculator.calculateRectanglePerimeter(null, '2')).toThrowError();
             expect(() => figureCalculator.calculateRectanglePerimeter([], {})).toThrowError();
+        });
+
+        it('should return correct value based on rectangle perimeter formula', () => {
+            const length = 20;
+            const width = 10;
+            const spyAdd = jest.spyOn(MathBasic, 'add');
+            const spyMultiply = jest.spyOn(MathBasic, 'multiply');
+            const figureCalculator = new FigureCalculator(MathBasic);
+
+            const result = figureCalculator.calculateRectanglePerimeter(length, width);
+
+            expect(result).toEqual(60);
+            expect(spyAdd).toHaveBeenCalledWith(length, width);
+            expect(spyMultiply).toHaveBeenCalledWith(2, 30);
         });
     });
 });
