@@ -76,4 +76,14 @@ describe('A FigureCalculator', () => {
             expect(spyMultiply).toHaveBeenCalledWith(length, width);
         });
     });
+
+    describe('A calculateTrianglePerimeter function', () => {
+        it('should throw error when not given 2 parameters', () => {
+            const figureCalculator = new FigureCalculator({});
+
+            expect(() => figureCalculator.calculateTrianglePerimeter()).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter(1)).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter(1, 2, 3)).toThrowError();
+        });
+    });
 });

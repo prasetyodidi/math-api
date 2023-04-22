@@ -29,7 +29,11 @@ class FigureCalculator {
 
         return this._mathBasic.multiply(length, width);
     }
-    calculateTrianglePerimeter() { }
+    calculateTrianglePerimeter(...args) {
+        if (args.length !== 2) {
+            throw new Error('fungsi hanya menerima dua parameter');
+        }
+    }
     calculateTriangleArea() { }
 }
 
