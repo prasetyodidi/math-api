@@ -25,8 +25,10 @@ const MathBasic = {
 
         return a - b;
     },
-    multiply: () => {
-
+    multiply: (...args) => {
+        if (args.length !== 2) {
+            throw new Error('fungsi multiply hanya menerima dua parameter');
+        }
     },
     divide: () => {
 
