@@ -1,3 +1,4 @@
+
 # Skenario Pengujian:
 
 ## Sebuah objek MathBasic
@@ -38,7 +39,7 @@
 
 ## Sebuah objek FigureCalculator
 
-Harus memiliki fungsi calculateRectanglePerimeter, calculateRectangleArea, calculateTrianglePerimeter, dan calculateTriangleArea.
+~~Harus memiliki fungsi calculateRectanglePerimeter, calculateRectangleArea, calculateTrianglePerimeter, dan calculateTriangleArea.~~
 
 ## Sebuah fungsi calculateRectanglePerimeter
 - Harus mengembalikan error ketika tidak diberikan dua parameter
