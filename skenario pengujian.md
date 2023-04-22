@@ -59,4 +59,4 @@
 ## Sebuah fungsi calculateTriangleArea
 - ~~Harus mengembalikan error ketika tidak diberikan 2 parameter~~
 - ~~Harus mengembalikan error ketika diberikan parameter selain number~~
-- Harus mengembalikan nilai yang tepat berdasarkan rumus luas segitiga
+- ~~Harus mengembalikan nilai yang tepat berdasarkan rumus luas segitiga~~

@@ -52,6 +52,8 @@ class FigureCalculator {
         if (typeof base !== 'number' || typeof height !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
+
+        return this._mathBasic.divide(this._mathBasic.multiply(base, height), 2);
     }
 }
 
