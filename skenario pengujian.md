@@ -67,9 +67,9 @@
 
 ~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pertambahan a dan b secara tepat~~
 
-## Ketika GET /subtract
+## ~~Ketika GET /subtract~~
 
-Harus menghasilkan response code 200 dan mengembalikan payload value hasil pengurangan a dan b secara tepat
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pengurangan a dan b secara tepat~~
 
 ## Ketika GET /multiply
 
