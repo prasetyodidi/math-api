@@ -30,8 +30,8 @@ class FigureCalculator {
         return this._mathBasic.multiply(length, width);
     }
     calculateTrianglePerimeter(...args) {
-        if (args.length !== 2) {
-            throw new Error('fungsi hanya menerima dua parameter');
+        if (args.length !== 3) {
+            throw new Error('fungsi hanya menerima tiga parameter');
         }
 
         const [length, width] = args;

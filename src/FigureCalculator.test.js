@@ -78,12 +78,13 @@ describe('A FigureCalculator', () => {
     });
 
     describe('A calculateTrianglePerimeter function', () => {
-        it('should throw error when not given 2 parameters', () => {
+        it('should throw error when not given 3 parameters', () => {
             const figureCalculator = new FigureCalculator({});
 
             expect(() => figureCalculator.calculateTrianglePerimeter()).toThrowError();
             expect(() => figureCalculator.calculateTrianglePerimeter(1)).toThrowError();
-            expect(() => figureCalculator.calculateTrianglePerimeter(1, 2, 3)).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter(1, 2)).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter(1, 2, 3, 4)).toThrowError();
         });
 
         it('should throw error when given with non-number parameters', () => {
