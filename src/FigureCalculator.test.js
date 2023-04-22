@@ -85,5 +85,13 @@ describe('A FigureCalculator', () => {
             expect(() => figureCalculator.calculateTrianglePerimeter(1)).toThrowError();
             expect(() => figureCalculator.calculateTrianglePerimeter(1, 2, 3)).toThrowError();
         });
+
+        it('should throw error when given with non-number parameters', () => {
+            const figureCalculator = new FigureCalculator({});
+
+            expect(() => figureCalculator.calculateTrianglePerimeter(true, {})).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter(null, 2)).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter([], {})).toThrowError();
+        });
     });
 });

@@ -53,7 +53,7 @@
 
 ## Sebuah fungsi calculateTrianglePerimeter
 - ~~Harus mengembalikan error ketika tidak diberikan 3 parameter~~
-- Harus mengembalikan error ketika diberikan parameter selain number
+- ~~Harus mengembalikan error ketika diberikan parameter selain number~~
 - Harus mengembalikan nilai yang tepat berdasarkan rumus keliling segitiga
 
 ## Sebuah fungsi calculateTriangleArea
