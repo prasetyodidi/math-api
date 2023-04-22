@@ -63,9 +63,9 @@
 
 ## Sebuah objek HTTP Server
 
-## Ketika GET /add
+## ~~Ketika GET /add~~
 
-Harus menghasilkan response code 200 dan mengembalikan payload value hasil pertambahan a dan b secara tepat
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pertambahan a dan b secara tepat~~
 
 ## Ketika GET /subtract
 
