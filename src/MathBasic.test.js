@@ -74,5 +74,14 @@ describe('A MathBasic', () => {
             expect(MathBasic.multiply(1, 0)).toEqual(0);
         });
     });
+
+    describe('A divide function', () => {
+        it('should throw error when not given 2 parameter', () => {
+            expect(() => MathBasic.divide()).toThrowError();
+            expect(() => MathBasic.divide(1)).toThrowError();
+            expect(() => MathBasic.divide(1, 2, 3)).toThrowError();
+            expect(() => MathBasic.divide(1, 2, 3, 4)).toThrowError();
+        });
+    });
 });
 
