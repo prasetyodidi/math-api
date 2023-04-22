@@ -1,3 +1,4 @@
+
 # Skenario Pengujian:
 
 ## Sebuah objek MathBasic
@@ -38,24 +39,24 @@
 
 ## Sebuah objek FigureCalculator
 
-Harus memiliki fungsi calculateRectanglePerimeter, calculateRectangleArea, calculateTrianglePerimeter, dan calculateTriangleArea.
+~~Harus memiliki fungsi calculateRectanglePerimeter, calculateRectangleArea, calculateTrianglePerimeter, dan calculateTriangleArea.~~
 
 ## Sebuah fungsi calculateRectanglePerimeter
-- Harus mengembalikan error ketika tidak diberikan dua parameter
-- Harus mengembalikan error ketika diberikan parameter selain number
-- Harus mengembalikan nilai yang tepat berdasarkan rumus keliling persegi
+- ~~Harus mengembalikan error ketika tidak diberikan dua parameter~~
+- ~~Harus mengembalikan error ketika diberikan parameter selain number~~
+- ~~Harus mengembalikan nilai yang tepat berdasarkan rumus keliling persegi~~
 
 ## Sebuah fungsi calculateRectangleArea
-- Harus mengembalikan error ketika tidak diberikan dua parameter
-- Harus mengembalikan error ketika diberikan parameter selain number
-- Harus mengembalikan nilai yang tepat berdasarkan rumus luas persegi
+- ~~Harus mengembalikan error ketika tidak diberikan dua parameter~~
+- ~~Harus mengembalikan error ketika diberikan parameter selain number~~
+- ~~Harus mengembalikan nilai yang tepat berdasarkan rumus luas persegi~~
 
 ## Sebuah fungsi calculateTrianglePerimeter
-- Harus mengembalikan error ketika tidak diberikan 3 parameter
-- Harus mengembalikan error ketika diberikan parameter selain number
-- Harus mengembalikan nilai yang tepat berdasarkan rumus keliling segitiga
+- ~~Harus mengembalikan error ketika tidak diberikan 3 parameter~~
+- ~~Harus mengembalikan error ketika diberikan parameter selain number~~
+- ~~Harus mengembalikan nilai yang tepat berdasarkan rumus keliling segitiga~~
 
 ## Sebuah fungsi calculateTriangleArea
-- Harus mengembalikan error ketika tidak diberikan 2 parameter
-- Harus mengembalikan error ketika diberikan parameter selain number
-- Harus mengembalikan nilai yang tepat berdasarkan rumus luas segitiga
+- ~~Harus mengembalikan error ketika tidak diberikan 2 parameter~~
+- ~~Harus mengembalikan error ketika diberikan parameter selain number~~
+- ~~Harus mengembalikan nilai yang tepat berdasarkan rumus luas segitiga~~
