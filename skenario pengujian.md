@@ -48,7 +48,7 @@
 
 ## Sebuah fungsi calculateRectangleArea
 - ~~Harus mengembalikan error ketika tidak diberikan dua parameter~~
-- Harus mengembalikan error ketika diberikan parameter selain number
+- ~Harus mengembalikan error ketika diberikan parameter selain number~
 - Harus mengembalikan nilai yang tepat berdasarkan rumus luas persegi
 
 ## Sebuah fungsi calculateTrianglePerimeter
