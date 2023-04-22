@@ -109,4 +109,14 @@ describe('A FigureCalculator', () => {
             expect(spyAdd).toHaveBeenNthCalledWith(3, side1, side2 + side3);
         });
     });
+
+    describe('A calculateTriangleArea', () => {
+        it('should throw error when not given 2 parameters', () => {
+            const figureCalculator = new FigureCalculator({});
+
+            expect(() => figureCalculator.calculateTriangleArea()).toThrowError();
+            expect(() => figureCalculator.calculateTriangleArea(1)).toThrowError();
+            expect(() => figureCalculator.calculateTriangleArea(1, 2, 3)).toThrowError();
+        });
+    });
 });

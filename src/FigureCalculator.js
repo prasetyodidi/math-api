@@ -42,7 +42,11 @@ class FigureCalculator {
 
         return this._mathBasic.add(side1, this._mathBasic.add(side2, side3));
     }
-    calculateTriangleArea() { }
+    calculateTriangleArea(...args) {
+        if (args.length !== 2) {
+            throw new Error('fungsi hanya menerima dua parameter');
+        }
+    }
 }
 
 module.exports = FigureCalculator;
