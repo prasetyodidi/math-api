@@ -15,7 +15,7 @@ describe('A FigureCalculator', () => {
         expect(figureCalculator.calculateTriangleArea).toBeInstanceOf(Function);
     });
 
-    describe('A calculatorRectanglePerimeter function', () => {
+    describe('A calculateRectanglePerimeter function', () => {
         it('should throw error when not given 2 parameters', () => {
             const figureCalculator = new FigureCalculator({});
 
@@ -44,6 +44,16 @@ describe('A FigureCalculator', () => {
             expect(result).toEqual(60);
             expect(spyAdd).toHaveBeenCalledWith(length, width);
             expect(spyMultiply).toHaveBeenCalledWith(2, 30);
+        });
+    });
+
+    describe('A calculateRectangleArea', () => {
+        it('should throw error when not given 2 parameters', () => {
+            const figureCalculator = new FigureCalculator({});
+
+            expect(() => figureCalculator.calculateRectangleArea()).toThrowError();
+            expect(() => figureCalculator.calculateRectangleArea(1)).toThrowError();
+            expect(() => figureCalculator.calculateRectangleArea(1, 2, 3)).toThrowError();
         });
     });
 });

@@ -16,7 +16,11 @@ class FigureCalculator {
 
         return this._mathBasic.multiply(2, this._mathBasic.add(length, width));
     }
-    calculateRectangleArea() { }
+    calculateRectangleArea(...args) {
+        if (args.length !== 2) {
+            throw new Error('fungsi hanya menerima dua parameter');
+        }
+    }
     calculateTrianglePerimeter() { }
     calculateTriangleArea() { }
 }
