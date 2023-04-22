@@ -63,5 +63,17 @@ describe('A FigureCalculator', () => {
             expect(() => figureCalculator.calculateRectangleArea(null, 2)).toThrowError();
             expect(() => figureCalculator.calculateRectangleArea([], {})).toThrowError();
         });
+
+        it('should return correct value based on rectangle area formula', () => {
+            const length = 20;
+            const width = 10;
+            const spyMultiply = jest.spyOn(MathBasic, 'multiply');
+            const figureCalculator = new FigureCalculator(MathBasic);
+
+            const result = figureCalculator.calculateRectangleArea(length, width);
+
+            expect(result).toEqual(200);
+            expect(spyMultiply).toHaveBeenCalledWith(length, width);
+        });
     });
 });

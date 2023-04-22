@@ -26,6 +26,8 @@ class FigureCalculator {
         if (typeof length !== 'number' || typeof width !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
+
+        return this._mathBasic.multiply(length, width);
     }
     calculateTrianglePerimeter() { }
     calculateTriangleArea() { }
