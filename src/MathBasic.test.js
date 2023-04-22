@@ -67,6 +67,12 @@ describe('A MathBasic', () => {
             expect(() => MathBasic.multiply(true, {})).toThrowError();
             expect(() => MathBasic.multiply(null, false)).toThrowError();
         });
+
+        it('should return a * b when given two number parameters', () => {
+            expect(MathBasic.multiply(2, 2)).toEqual(4);
+            expect(MathBasic.multiply(4, 3)).toEqual(12);
+            expect(MathBasic.multiply(1, 0)).toEqual(0);
+        });
     });
 });
 
