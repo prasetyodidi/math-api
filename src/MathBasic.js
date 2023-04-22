@@ -6,7 +6,7 @@ const MathBasic = {
 
         const [a, b] = args;
 
-        if (typeof a !== 'number' && typeof b !== 'number') {
+        if (typeof a !== 'number' || typeof b !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
 
@@ -19,7 +19,7 @@ const MathBasic = {
 
         const [a, b] = args;
 
-        if (typeof a !== 'number' && typeof b !== 'number') {
+        if (typeof a !== 'number' || typeof b !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
 
@@ -32,7 +32,7 @@ const MathBasic = {
 
         const [a, b] = args;
 
-        if (typeof a !== 'number' && typeof b !== 'number') {
+        if (typeof a !== 'number' || typeof b !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
 
@@ -45,7 +45,7 @@ const MathBasic = {
 
         const [a, b] = args;
 
-        if (typeof a !== 'number' && typeof b !== 'number') {
+        if (typeof a !== 'number' || typeof b !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
 
