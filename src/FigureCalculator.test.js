@@ -94,5 +94,19 @@ describe('A FigureCalculator', () => {
             expect(() => figureCalculator.calculateTrianglePerimeter(null, 2, [])).toThrowError();
             expect(() => figureCalculator.calculateTrianglePerimeter([], {}, '2')).toThrowError();
         });
+
+        it('should return correct value based on triangle perimeter formula', () => {
+            const side1 = 12;
+            const side2 = 12;
+            const side3 = 24;
+            const spyAdd = jest.spyOn(MathBasic, 'add');
+            const figureCalculator = new FigureCalculator(MathBasic);
+
+            const result = figureCalculator.calculateTrianglePerimeter(side1, side2, side3);
+
+            expect(result).toEqual(48);
+            expect(spyAdd).toHaveBeenNthCalledWith(2, side2, side3);
+            expect(spyAdd).toHaveBeenNthCalledWith(3, side1, side2 + side3);
+        });
     });
 });

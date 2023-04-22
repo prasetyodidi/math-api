@@ -39,6 +39,8 @@ class FigureCalculator {
         if (typeof side1 !== 'number' || typeof side2 !== 'number' || typeof side3 !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
+
+        return this._mathBasic.add(side1, this._mathBasic.add(side2, side3));
     }
     calculateTriangleArea() { }
 }
