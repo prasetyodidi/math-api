@@ -34,9 +34,9 @@ class FigureCalculator {
             throw new Error('fungsi hanya menerima tiga parameter');
         }
 
-        const [length, width] = args;
+        const [side1, side2, side3] = args;
 
-        if (typeof length !== 'number' || typeof width !== 'number') {
+        if (typeof side1 !== 'number' || typeof side2 !== 'number' || typeof side3 !== 'number') {
             throw new Error('fungsi hanya menerima parameter number');
         }
     }

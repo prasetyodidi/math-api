@@ -90,9 +90,9 @@ describe('A FigureCalculator', () => {
         it('should throw error when given with non-number parameters', () => {
             const figureCalculator = new FigureCalculator({});
 
-            expect(() => figureCalculator.calculateTrianglePerimeter(true, {})).toThrowError();
-            expect(() => figureCalculator.calculateTrianglePerimeter(null, 2)).toThrowError();
-            expect(() => figureCalculator.calculateTrianglePerimeter([], {})).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter(true, {}, null)).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter(null, 2, [])).toThrowError();
+            expect(() => figureCalculator.calculateTrianglePerimeter([], {}, '2')).toThrowError();
         });
     });
 });
