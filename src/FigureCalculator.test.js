@@ -118,5 +118,13 @@ describe('A FigureCalculator', () => {
             expect(() => figureCalculator.calculateTriangleArea(1)).toThrowError();
             expect(() => figureCalculator.calculateTriangleArea(1, 2, 3)).toThrowError();
         });
+
+        it('should throw error when given with non-number parameters', () => {
+            const figureCalculator = new FigureCalculator({});
+
+            expect(() => figureCalculator.calculateTriangleArea(true, {})).toThrowError();
+            expect(() => figureCalculator.calculateTriangleArea(null, 2)).toThrowError();
+            expect(() => figureCalculator.calculateTriangleArea([], {})).toThrowError();
+        });
     });
 });

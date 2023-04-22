@@ -46,6 +46,12 @@ class FigureCalculator {
         if (args.length !== 2) {
             throw new Error('fungsi hanya menerima dua parameter');
         }
+
+        const [base, height] = args;
+
+        if (typeof base !== 'number' || typeof height !== 'number') {
+            throw new Error('fungsi hanya menerima parameter number');
+        }
     }
 }
 
