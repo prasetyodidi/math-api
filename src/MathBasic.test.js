@@ -88,6 +88,12 @@ describe('A MathBasic', () => {
             expect(() => MathBasic.divide(true, {})).toThrowError();
             expect(() => MathBasic.divide(null, false)).toThrowError();
         });
+
+        it('should return a / b when given two number parameters', () => {
+            expect(MathBasic.divide(4, 2)).toEqual(2);
+            expect(MathBasic.divide(9, 3)).toEqual(3);
+            expect(MathBasic.divide(2, 2)).toEqual(1);
+        });
     });
 });
 
