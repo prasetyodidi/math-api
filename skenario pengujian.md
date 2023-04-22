@@ -42,7 +42,7 @@
 ~~Harus memiliki fungsi calculateRectanglePerimeter, calculateRectangleArea, calculateTrianglePerimeter, dan calculateTriangleArea.~~
 
 ## Sebuah fungsi calculateRectanglePerimeter
-- Harus mengembalikan error ketika tidak diberikan dua parameter
+- ~~Harus mengembalikan error ketika tidak diberikan dua parameter~~
 - Harus mengembalikan error ketika diberikan parameter selain number
 - Harus mengembalikan nilai yang tepat berdasarkan rumus keliling persegi
 
