@@ -82,6 +82,12 @@ describe('A MathBasic', () => {
             expect(() => MathBasic.divide(1, 2, 3)).toThrowError();
             expect(() => MathBasic.divide(1, 2, 3, 4)).toThrowError();
         });
+
+        it('should throw error when given non-number parameters', () => {
+            expect(() => MathBasic.divide('1', '2')).toThrowError();
+            expect(() => MathBasic.divide(true, {})).toThrowError();
+            expect(() => MathBasic.divide(null, false)).toThrowError();
+        });
     });
 });
 
