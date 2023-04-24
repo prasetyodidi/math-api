@@ -71,9 +71,9 @@
 
 ~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pengurangan a dan b secara tepat~~
 
-## Ketika GET /multiply
+## ~~Ketika GET /multiply~~
 
-Harus menghasilkan response code 200 dan mengembalikan payload value hasil perkalian a dan b secara tepat
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perkalian a dan b secara tepat~~
 
 ## Ketika GET /divide
 
