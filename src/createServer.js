@@ -1,5 +1,4 @@
 const Hapi = require('@hapi/hapi');
-const FigureCalculator = require("./FigureCalculator");
 
 const createServer = ({ mathBasic, figureCalculator }) => {
     const server = Hapi.server({
@@ -59,6 +58,15 @@ const createServer = ({ mathBasic, figureCalculator }) => {
             handler: (request) => {
                 const { a, b } = request.params;
                 const value = figureCalculator.calculateRectangleArea(Number(a), Number(b));
+                return { value };
+            },
+        },
+        {
+            method: 'GET',
+            path: '/rectangle/perimeter/{a}/{b}/{c}',
+            handler: (request) => {
+                const { a, b, c } = request.params;
+                const value = figureCalculator.calculateTrianglePerimeter(Number(a), Number(b), Number(c));
                 return { value };
             },
         },
