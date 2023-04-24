@@ -60,3 +60,37 @@
 - ~~Harus mengembalikan error ketika tidak diberikan 2 parameter~~
 - ~~Harus mengembalikan error ketika diberikan parameter selain number~~
 - ~~Harus mengembalikan nilai yang tepat berdasarkan rumus luas segitiga~~
+
+## Sebuah objek HTTP Server
+
+## ~~Ketika GET /add~~
+
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pertambahan a dan b secara tepat~~
+
+## ~~Ketika GET /subtract~~
+
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pengurangan a dan b secara tepat~~
+
+## ~~Ketika GET /multiply~~
+
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perkalian a dan b secara tepat~~
+
+## ~~Ketika GET /divide~~
+
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pembagian a dan b secara tepat~~
+
+## ~~Ketika GET /rectangle/perimeter~~
+
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus keliling persegi panjang~~
+
+## ~~Ketika GET /rectangle/area~~
+
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus luas persegi panjang~~
+
+## ~~Ketika GET /triangle/perimeter~~
+
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus keliling segitiga~~
+
+## ~~Ketika GET /triangle/area~~
+
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus luas segitiga~~
