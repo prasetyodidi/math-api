@@ -103,4 +103,24 @@ describe('A HTTP Server', () => {
         });
     });
 
+    describe('when GET /rectangle/area', () => {
+        it('should respond with a status code of 200 and the payload value is rectangle area result of a and b correctly', async () => {
+            const a = 20;
+            const b = 10;
+            const spyMultiple = jest.spyOn(MathBasic, 'multiply');
+            const figureCalculator =  new FigureCalculator(MathBasic);
+            const server = createServer({ mathBasic: MathBasic, figureCalculator });
+
+            const response = await server.inject({
+                method: 'GET',
+                url: `/rectangle/area/${a}/${b}`,
+            });
+
+            const responseJson = JSON.parse(response.payload);
+            expect(response.statusCode).toEqual(200);
+            expect(responseJson.value).toEqual(200);
+            expect(spyMultiple).toBeCalledWith(a, b);
+        });
+    });
+
 })
