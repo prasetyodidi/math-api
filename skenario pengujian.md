@@ -79,9 +79,9 @@
 
 ~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pembagian a dan b secara tepat~~
 
-## Ketika GET /rectangle/perimeter
+## ~~Ketika GET /rectangle/perimeter~~
 
-Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus keliling persegi panjang
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus keliling persegi panjang~~
 
 ## Ketika GET /rectangle/area
 
