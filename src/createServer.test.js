@@ -144,4 +144,26 @@ describe('A HTTP Server', () => {
         });
     });
 
+    describe('when GET /triangle/area', () => {
+        it('should respond with a status code of 200 and the payload value is triangle area result of a, b correctly', async () => {
+            const a = 15;
+            const b = 16;
+            const spyMultiple = jest.spyOn(MathBasic, 'multiply');
+            const spyDivide = jest.spyOn(MathBasic, 'divide');
+            const figureCalculator =  new FigureCalculator(MathBasic);
+            const server = createServer({ mathBasic: MathBasic, figureCalculator });
+
+            const response = await server.inject({
+                method: 'GET',
+                url: `/triangle/area/${a}/${b}`,
+            });
+
+            const responseJson = JSON.parse(response.payload);
+            expect(response.statusCode).toEqual(200);
+            expect(responseJson.value).toEqual(120);
+            expect(spyMultiple).toBeCalledWith(15, 16);
+            expect(spyDivide).toBeCalledWith(240, 2);
+        });
+    });
+
 })

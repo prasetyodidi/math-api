@@ -91,6 +91,6 @@
 
 ~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus keliling segitiga~~
 
-## Ketika GET /triangle/area
+## ~~Ketika GET /triangle/area~~
 
-Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus luas segitiga
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perhitungan rumus luas segitiga~~

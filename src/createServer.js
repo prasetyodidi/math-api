@@ -70,6 +70,15 @@ const createServer = ({ mathBasic, figureCalculator }) => {
                 return { value };
             },
         },
+        {
+            method: 'GET',
+            path: '/triangle/area/{a}/{b}',
+            handler: (request) => {
+                const { a, b } = request.params;
+                const value = figureCalculator.calculateTriangleArea(Number(a), Number(b));
+                return { value };
+            },
+        },
     ]);
 
     return server;
