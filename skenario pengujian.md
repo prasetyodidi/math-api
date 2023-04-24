@@ -75,9 +75,9 @@
 
 ~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil perkalian a dan b secara tepat~~
 
-## Ketika GET /divide
+## ~~Ketika GET /divide~~
 
-Harus menghasilkan response code 200 dan mengembalikan payload value hasil pembagian a dan b secara tepat
+~~Harus menghasilkan response code 200 dan mengembalikan payload value hasil pembagian a dan b secara tepat~~
 
 ## Ketika GET /rectangle/perimeter
 
