@@ -63,7 +63,7 @@ const createServer = ({ mathBasic, figureCalculator }) => {
         },
         {
             method: 'GET',
-            path: '/rectangle/perimeter/{a}/{b}/{c}',
+            path: '/triangle/perimeter/{a}/{b}/{c}',
             handler: (request) => {
                 const { a, b, c } = request.params;
                 const value = figureCalculator.calculateTrianglePerimeter(Number(a), Number(b), Number(c));

@@ -134,7 +134,7 @@ describe('A HTTP Server', () => {
 
             const response = await server.inject({
                 method: 'GET',
-                url: `/rectangle/perimeter/${a}/${b}/${c}`,
+                url: `/triangle/perimeter/${a}/${b}/${c}`,
             });
 
             const responseJson = JSON.parse(response.payload);
